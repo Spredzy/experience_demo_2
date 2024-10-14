@@ -1,0 +1,15 @@
+---
+namespace: ansible
+name: experience_demo_2
+version: 0.0.1
+readme: README.md
+authors:
+  - Yanis Guenane <yguenane@redhat.com>
+
+description: A Demo Ansible Experience
+license_file: LICENSE
+tags: []
+
+repository: https://www.github.com/Spredzy/experience_demo_2
+documentation: https://www.github.com/Spredzy/experience_demo_2
+homepage: https://www.github.com/Spredzy/experience_demo_2

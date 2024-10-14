@@ -1,0 +1,33 @@
+---
+# Labels
+#
+controller_labels:
+  - name: network
+    organization: Default
+
+# Projects
+#
+controller_projects:
+  - name: Network Demo Playbooks Project
+    organization: Default
+    scm_branch: main
+    scm_clean: 'no'
+    scm_delete_on_update: 'no'
+    scm_type: git
+    scm_update_on_launch: 'no'
+    scm_url: https://github.com/Spredzy/experience_demo_2.git
+
+
+# Job Templates
+#
+controller_templates:
+  - name: Network / Patch Cisco Switch
+    ask_inventory_on_launch: true
+    labels: network
+    playbook: extensions/experiences/patching/playbooks/patch_switch.yml
+    project: Network Demo Playbooks Project
+  - name: Network / Update Cisco BGP table
+    ask_inventory_on_launch: true
+    labels: network
+    playbook: extensions/experiences/patching/playbooks/update_bgp.yml
+    project: Network Demo Playbooks Project

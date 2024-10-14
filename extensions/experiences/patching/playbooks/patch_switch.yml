@@ -1,0 +1,6 @@
+---
+- name: Patching Switch
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: 'Patching Switch'

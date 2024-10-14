@@ -1,0 +1,6 @@
+---
+- name: Update BGP
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: 'Update BGP routes'
